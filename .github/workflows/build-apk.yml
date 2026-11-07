@@ -26,8 +26,8 @@ jobs:
       - name: Extract project
         run: |
           mkdir source
-          unzip -q FootballAnalyzer-Android-CloudBuild-4.zip -d source
-
+          
+          unzip -q *.zip -d source
       - name: Build APK
         run: |
           cd source/FootballAnalyzer
